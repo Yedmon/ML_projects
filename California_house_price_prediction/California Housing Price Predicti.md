@@ -85,16 +85,17 @@ The project uses **Ordinary Least Squares (OLS) Linear Regression** implemented 
 
 Mathematically, the model learns
 
-[
-\hat{y}=w_1x_1+w_2x_2+\cdots+w_nx_n+b
-]
+$$
+\hat{y} = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
+$$
 
-where:
+Where:
+* $x_i$: input features
+* $w_i$: learned coefficients
+* $b$: intercept
+* $\hat{y}$: predicted house value
 
-* (x_i) are the input features,
-* (w_i) are the learned coefficients,
-* (b) is the intercept,
-* (\hat{y}) is the predicted house value.
+
 
 ---
 
