@@ -4,19 +4,6 @@
 # Goal:
 # Predict product sales based on the amount of money spent on
 # TV, Radio, and Newspaper advertisements.
-#
-# Workflow:
-# 1. Import libraries
-# 2. Load dataset
-# 3. Separate features and target
-# 4. Split the data
-# 5. Scale the features
-# 6. Train the Linear Regression model
-# 7. Inspect learned coefficients
-# 8. Make predictions
-# 9. Evaluate the model
-# 10. Visualize the results
-# ==============================================================================
 
 import numpy as np
 import pandas as pd
@@ -36,7 +23,7 @@ from sklearn.metrics import (
 # ==============================================================================
 
 # Read the CSV file into a Pandas DataFrame.
-df = pd.read_csv("Advertising.csv")
+df = pd.read_csv("Advertising.csv", index_col=0)
 
 # Uncomment these whenever you want to inspect the dataset.
 # print(df.head())
