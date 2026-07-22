@@ -243,25 +243,3 @@ print("Confusion Matrix")
 print(confusion_matrix(y_test, y_pred))
 
 
-# ==========================================================
-# Step 11 : Predict New Students
-# ==========================================================
-
-new_students = np.array([
-    [2],
-    [4.5],
-    [6],
-    [9]
-])
-
-# Scale using the SAME scaler learned from
-# the training data.
-
-new_students_scaled = scaler.transform(new_students)
-
-predictions = model.predict(new_students_scaled)
-
-prediction_probabilities = model.predict_proba(
-    new_students_scaled
-)
-
